@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="AlumniApp" ng-controller="AlumniController">
+
+    <h2>Registered Students</h2>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Batch</th>
+            <th>Company</th>
+        </tr>
+        <tr ng-repeat="a in alumniList">
+            <td>{{ a.name }}</td>
+            <td>{{ a.email }}</td>
+            <td>{{ a.batch }}</td>
+            <td>{{ a.company }}</td>
+        </tr>
+    </table>
+
+    <br>
+    <a href="index.html">Go Back</a>
+
+</body>
+</html>

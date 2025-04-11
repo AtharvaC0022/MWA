@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Information Registration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="AlumniApp" ng-controller="AlumniController">
+
+    <h2>Registration Form</h2>
+    
+    <form ng-submit="saveData()">
+        <label>Name:</label>
+        <input type="text" ng-model="alumni.name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" ng-model="alumni.email" required><br><br>
+
+        <label>Batch:</label>
+        <input type="text" ng-model="alumni.batch" required><br><br>
+
+        <label>Company:</label>
+        <input type="text" ng-model="alumni.company"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <a href="display.html">View List</a>
+
+</body>
+</html>
